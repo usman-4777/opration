@@ -14,6 +14,7 @@ class AuthController extends Controller
            'email' => 'required|email',
            'password' => 'required'
         ]);
+        // this is just comment
         $user = User::where('email', $request->email)->first();
         //$otp_code = random_int(100000, 999999);
         //$user->(['otp_code' => $otp_code])->save();
